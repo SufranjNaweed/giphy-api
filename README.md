@@ -8,26 +8,26 @@ Make sure you have Node js v10 or higher and Npm v5 at least on your machine
 install dependencies 
 
 ```
-    npm install
+npm install
 ```
 
 run project as dev
 
 ```
-    npm run dev
+npm run dev
 ```
 
 run project in prod (Heroku for example)
 
 ```
-    npm start
+npm start
 ```
 
 ## Create a .env file and add this into the .env file at the project's root
 copy paste this :
 ```
-    API_KEY=yourGiphyApiKey
-    USERNAME=yourdbName
-    PASSWORD=yourdbPassword
-    PORT=yourPort
+API_KEY=yourGiphyApiKey
+USERNAME=yourdbName
+PASSWORD=yourdbPassword
+PORT=yourPort
 ```
