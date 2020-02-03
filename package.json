@@ -4,6 +4,8 @@
   "description": "GIF Fetcher from Giphy API",
   "main": "server.js",
   "scripts": {
+    "start": "node server",
+    "dev": "nodemon server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/SufranjNaweed/giphy-api/issues"
   },
-  "homepage": "https://github.com/SufranjNaweed/giphy-api#readme"
+  "homepage": "https://github.com/SufranjNaweed/giphy-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
 }
