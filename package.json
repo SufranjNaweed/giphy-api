@@ -1,0 +1,24 @@
+{
+  "name": "giphy-api",
+  "version": "1.0.0",
+  "description": "GIF Fetcher from Giphy API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SufranjNaweed/giphy-api.git"
+  },
+  "keywords": [
+    "Giphy",
+    "Fetcher",
+    "NO-DB"
+  ],
+  "author": "Naweed SUFRANJ KrakenSIN",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SufranjNaweed/giphy-api/issues"
+  },
+  "homepage": "https://github.com/SufranjNaweed/giphy-api#readme"
+}
