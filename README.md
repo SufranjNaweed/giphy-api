@@ -27,7 +27,5 @@ npm start
 copy paste this :
 ```
 API_KEY=yourGiphyApiKey
-USERNAME=yourdbName
-PASSWORD=yourdbPassword
 PORT=yourPort
 ```
