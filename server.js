@@ -17,6 +17,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/api/v1/gifs', require('./routes/api/gifs'));
+app.use('/api/v1/stickers', require('./routes/api/stickers'));
  
 app.listen(PORT, () => {
     console.log(`server running on ${PORT}`)
