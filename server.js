@@ -26,7 +26,7 @@ app.use('/api/v1/stickers', require('./routes/api/stickers'));
 //app.listen(PORT, HOST);
 //console.log(`Running on http://${HOST}:${PORT}`);
 
-  // Initialize the app.
+// Initialize the app.
 const server = app.listen(PORT, function () {
     const port = server.address().port;
     console.log("App now running on port", port);
