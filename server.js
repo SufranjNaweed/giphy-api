@@ -1,10 +1,10 @@
 require('dotenv').config();
-// 3 tabs for const required
+
 const express           = require('express');
 const app               = express();
-
+const PORT              = process.env.PORT;
+const HOST              = '0.0.0.0';
 const cors              = require("cors");
-const PORT              = process.env.PORT || 5555;
 
 // Init Middleware
 app.use(express.json({ extended : false }));
@@ -13,12 +13,12 @@ app.use(express.json({ extended : false }));
 app.use(cors());
 
 app.get('/', (req, res) => {
-    res.send('Giphy Fetcher API is Running');
+    res.status(200).send(`Giphy Fetcher API is Running - http://${HOST}:${PORT}`);
 });
 
 app.use('/api/v1/gifs', require('./routes/api/gifs'));
 app.use('/api/v1/stickers', require('./routes/api/stickers'));
  
-app.listen(PORT, () => {
-    console.log(`server running on ${PORT}`)
-});
+
+app.listen(PORT, HOST);
+console.log(`Running on http://${HOST}:${PORT}`);
