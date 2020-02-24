@@ -2,7 +2,13 @@ const axios             = require('axios');
 
 module.exports = {
     fetcher : fetcher = async (url) => {
-        const data = await axios.get(url).then(res => res.data).catch(err => console.log(err));
-        return data;
+        try{
+            let result = await axios.get(url)
+            result = result.data
+            return result;
+        }
+        catch(err){
+            console.log(err);
+        }
     }
 }
