@@ -15,7 +15,7 @@ app.use(express.json({ extended : false }));
 app.use(cors());
 
 app.get('/', (req, res) => {
-    res.status(200).send(`- Giphy Fetcher API is Running -`);
+    res.status(200).send(`- CLAPS API is Running -`);
 });
 
 app.use('/api/v1/gifs', require('./routes/api/gifs/gifs'));
