@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 
-const axios = require('axios');
 const api_key  = process.env.API_KEY;
 const base_url_api = process.env.BASE_URL_API;
 const tools = require('../../../libs/tools');
