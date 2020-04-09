@@ -1,10 +1,10 @@
-const express           = require('express');
-const router            = express.Router();
+const express = require('express');
+const router = express.Router();
 
-const axios             = require('axios');
-const api_key           = process.env.API_KEY;
-const base_url_api      = process.env.BASE_URL_API;
-const tools             = require('../../libs/tools');
+const axios = require('axios');
+const api_key  = process.env.API_KEY;
+const base_url_api = process.env.BASE_URL_API;
+const tools = require('../../../libs/tools');
 
 // TODO MAKE A AUTH SYSTEM 
 
@@ -59,4 +59,4 @@ router.get('/search/byID/:idSearch', async (req, res)=>{
         return res.status(404).send('ressources not found');
 });
 
-module.exports  = router;
+module.exports = router;

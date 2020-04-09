@@ -1,9 +1,9 @@
-const express           = require('express');
-const router            = express.Router();
+const express = require('express');
+const router = express.Router();
 
-const api_key           = process.env.API_KEY;
-const base_url_api      = process.env.BASE_URL_API;
-const tools             = require('../../libs/tools');
+const api_key = process.env.API_KEY;
+const base_url_api = process.env.BASE_URL_API;
+const tools = require('../../../libs/tools');
 
 // @route   GET api/v1/stickers
 // @desc    Get 25 trend's Stickers
