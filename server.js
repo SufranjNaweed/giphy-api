@@ -20,6 +20,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/v1/gifs', require('./routes/api/gifs/gifs'));
 app.use('/api/v1/stickers', require('./routes/api/stickers/stickers'));
+app.use('/api/v1/users', require('./routes/api/users/users'));
 
 // Initialize the app.
 const server = app.listen(PORT, function () {
