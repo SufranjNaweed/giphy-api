@@ -5,7 +5,11 @@ const app = express();
 const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 9000;
 const HOST = '0.0.0.0';
+const connectDB = require('./config/db');
 const cors = require("cors");
+
+// Connect DataBase
+connectDB();
 
 app.use(bodyParser.json());
 // Init Middleware
