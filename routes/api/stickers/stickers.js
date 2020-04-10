@@ -42,5 +42,4 @@ router.get('/search/:wordSearch', async (req, res)=>{
         return res.status(404).send('ressources not found');
 });
 
-
-module.exports  = router;
+module.exports = router;
